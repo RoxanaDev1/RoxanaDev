@@ -34,7 +34,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "My first React app",
+      title: "Roxana Dev",
       template: path.join(CLIENT_DIR, "index.html"),
     }),
   ],
