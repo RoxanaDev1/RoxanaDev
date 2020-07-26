@@ -15,6 +15,7 @@ export default class Header extends React.Component<{}, {}> {
 const HeaderContainer = styled.div`
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100px;
