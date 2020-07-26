@@ -19,7 +19,9 @@ const HeaderContainer = styled.div`
   width: 100%;
   height: 100px;
   font-family: monospace;
-  background: #b0c4de;
+  background: #3d4f5d;
+  color: white;
+  text-align: center;
 `;
 
 const HeaderTitle = styled.div`
@@ -27,4 +29,6 @@ const HeaderTitle = styled.div`
   letter-spacing: 5px;
 `;
 
-const HeaderDescription = styled.div``;
+const HeaderDescription = styled.div`
+  font-size: x-large;
+`;
