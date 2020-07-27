@@ -4,7 +4,8 @@ export default class Articles {
   private static ARTICLE_1: Article = {
     title: "Code design, why?",
     publishDate: "September 29, 2015",
-    link: "/pulse/design-why-roxana-balan?trk=portfolio_article-card_title",
+    link:
+      "https://www.linkedin.com/pulse/design-why-roxana-balan?trk=portfolio_article-card_title",
     imgLink:
       "https://media-exp1.licdn.com/dms/image/C4D12AQHMn0_KXbA8Zg/article-cover_image-shrink_600_2000/0?e=1601510400&v=beta&t=2y7tu0lgDgxxU3osRWvbY3_UbtmEtNC2I7ABfAjPu6w",
     description:
@@ -26,7 +27,7 @@ export default class Articles {
     title: "Thinking architecture in React",
     publishDate: "June 22, 2020",
     link:
-      "/pulse/thinking-architecture-react-roxana-balan-johansen?trk=portfolio_article-card_title",
+      "https://www.linkedin.com/pulse/thinking-architecture-react-roxana-balan-johansen?trk=portfolio_article-card_title",
     imgLink:
       "https://media-exp1.licdn.com/dms/image/C4D12AQHdl9sXVUjGog/article-cover_image-shrink_600_2000/0?e=1601510400&v=beta&t=jYTdJg1ABPVMgJTsH5NEp3BADDDLUcgcDVd5O0wnx5Y",
     description:
