@@ -17,6 +17,7 @@ export default class App extends React.Component<{}, AppState> {
     this.state = {
       currentSection: SectionTypes.ARTICLES,
     };
+    this.onSelectCurrentSection = this.onSelectCurrentSection.bind(this);
   }
 
   private onSelectCurrentSection(section: SectionTypes): void {
