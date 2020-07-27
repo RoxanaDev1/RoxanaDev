@@ -1,9 +1,10 @@
 import * as React from "react";
+import ArticlesPage from "./sections/ArticlesPage";
 import Header from "./components/Header";
+import Sections from "./constants/Sections";
+import SideNavigation from "./components/SideNavigation";
 import SimpleComponent from "./components/SimpleComponent";
 import styled from "styled-components";
-import SideNavigation from "./components/SideNavigation";
-import Sections from "./constants/Sections";
 import { SectionTypes } from "./types/types";
 
 interface AppState {
@@ -24,6 +25,20 @@ export default class App extends React.Component<{}, AppState> {
     });
   }
 
+  private renderArticlesPage() {
+    if (this.state.currentSection !== SectionTypes.ARTICLES) {
+      return;
+    }
+    return <ArticlesPage />;
+  }
+
+  private renderBlogPage() {
+    if (this.state.currentSection !== SectionTypes.BLOG) {
+      return;
+    }
+    return <SimpleComponent text={"Nothing here yet :)"} />;
+  }
+
   render() {
     return (
       <AppContainer>
@@ -33,7 +48,8 @@ export default class App extends React.Component<{}, AppState> {
             sections={Sections.getSections()}
             onSelectSection={this.onSelectCurrentSection}
           />
-          <SimpleComponent text={"This is another simple component"} />
+          {this.renderArticlesPage()}
+          {this.renderBlogPage()}
         </ContentContainer>
       </AppContainer>
     );
@@ -50,5 +66,5 @@ const AppContainer = styled.div`
 const ContentContainer = styled.div`
   display: flex;
   height: inherit;
-  max-width: fit-content;
+  max-width: 100%;
 `;
