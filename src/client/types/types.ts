@@ -8,3 +8,11 @@ export type Section = {
   name: string;
   description: string;
 };
+
+export type Article = {
+  title: string;
+  publishDate: string;
+  link: string;
+  imgLink: string;
+  description: string;
+};
