@@ -13,12 +13,18 @@ export default class SideNavigation extends React.Component<
 > {
   constructor(props: SideNavigationProps) {
     super(props);
+    this.onSelectSection = this.onSelectSection.bind(this);
+  }
+
+  private onSelectSection(event: any): void {
+    this.props.onSelectSection(parseInt(event.currentTarget.id));
   }
 
   private renderSections(): JSX.Element[] {
     return this.props.sections.map((section: Section) => {
       return (
-        <SectionButton>
+        //@ts-ignore
+        <SectionButton id={section.type} onClick={this.onSelectSection}>
           <SectionButtonTitle>{section.name}</SectionButtonTitle>
           <SectionButtonDescription>
             {section.description}
