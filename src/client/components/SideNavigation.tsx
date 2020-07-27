@@ -38,7 +38,6 @@ export default class SideNavigation extends React.Component<
 const SideNavigationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   align-items: center;
   font-family: monospace;
   color: white;
