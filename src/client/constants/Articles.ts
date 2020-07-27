@@ -19,7 +19,7 @@ export default class Articles {
     imgLink:
       "https://media-exp1.licdn.com/dms/image/C4E12AQFuNMd4RB_zcg/article-cover_image-shrink_600_2000/0?e=1601510400&v=beta&t=9Khsms7q9mFgmbB1ZhzMhmiECAzpHCIxr79MOEBlw7g",
     description:
-      "After working with Typescript for 4 years, I would like to share some of my learning and why I would encourage any team to take the TS path",
+      "After working with Typescript for 4 years, I would like to share some of my learning and why I would encourage any team to take the TS path.",
   };
 
   private static ARTICLE_3: Article = {
